@@ -5,7 +5,8 @@
 	"typings": "dist/index.d.ts",
 	"files": [
 		"dist",
-		"src"
+		"src",
+		"tsdx.config.js"
 	],
 	"engines": {
 		"node": ">=10"
