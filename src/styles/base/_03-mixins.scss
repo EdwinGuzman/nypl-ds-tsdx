@@ -63,7 +63,8 @@
 
 //Convert pixel values to rem
 @function to-rem($size) {
-  @return $size / 16px * 1rem;
+  // @return $size / 16px * 1rem;
+  @return 16px;
 }
 
 //Process a color variable so that it can be used in a data URI/URL

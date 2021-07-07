@@ -1,7 +1,7 @@
 import * as React from "react";
 import { withDesign } from "storybook-addon-designs";
 import { Meta } from "@storybook/react/types-6-0";
-import range from "lodash/range";
+// import range from "lodash/range";
 
 import cssVariables from "../../helpers/CSSVariablesHelper";
 import Card from "../Card/Card";
@@ -90,7 +90,7 @@ export const SpacingInContext = args => (
       variables exported specifically for spacing.
     </p>
     <List type={ListTypes.Unordered} modifiers={["no-list-styling"]}>
-      {range(8).map(i => (
+      {(new Array(8)).map(i => (
         <li key={i} style={{ marginBottom: "var(" + args.marginBottom + ")" }}>
           <ExampleCard />
         </li>

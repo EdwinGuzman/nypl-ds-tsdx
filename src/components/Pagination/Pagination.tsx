@@ -1,5 +1,5 @@
 import * as React from "react";
-import range from "lodash/range";
+// import range from "lodash/range";
 import Link from "../Link/Link";
 import bem from "../../utils/bem";
 
@@ -134,7 +134,9 @@ const Pagination: React.FC<PaginationProps> = (props: PaginationProps) => {
             // second item will either be item 2 or an ellipse
             pageStart > 3 ? "ellipse-start" : 2,
             // Adding + 1 here since lodash range() doesn't include the last item passed to it
-            ...range(pageStart, pageEnd + 1),
+            // ...range(pageStart, pageEnd + 1),
+            // Just temp for now...
+            12,
             // next to last item will either be an ellipse or the next to last page number
             pageEnd < pageCount - 2 ? "ellipse-end" : pageCount - 1,
             // list always ends at and displays the last page number in the pageCount
